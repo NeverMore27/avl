@@ -14,5 +14,5 @@ hunter_add_package(avl_tree)
 find_package(avl_tree)
 
 add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/sources/demo.cpp)
-target_link_libraries(demo print)
+target_link_libraries(demo avl_tree)
 install(TARGETS demo RUNTIME DESTINATION bin)
